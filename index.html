@@ -1,793 +1,785 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2822
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reachware InsightView: Strategic Path Forward from PowerBI to Modern Analytics</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .page-header {
+            background: linear-gradient(135deg, #0062cc 0%, #0033cc 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .comparison-table th, .comparison-table td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        .comparison-table th {
+            background-color: #f5f7fa;
+        }
+        .comparison-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .card {
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        .option-header {
+            border-left: 5px solid;
+            padding-left: 15px;
+            margin-bottom: 20px;
+        }
+        .current-state {
+            border-color: #6c757d;
+        }
+        .option-1 {
+            border-color: #007bff;
+        }
+        .option-2 {
+            border-color: #28a745;
+        }
+        .tag {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+        .tag-neutral {
+            background-color: #f8f9fa;
+            color: #6c757d;
+        }
+        .tag-positive {
+            background-color: #d4edda;
+            color: #28a745;
+        }
+        .tag-negative {
+            background-color: #f8d7da;
+            color: #dc3545;
+        }
+        .tag-warning {
+            background-color: #fff3cd;
+            color: #ffc107;
+        }
+        .chart {
+            height: 300px;
+            margin: 30px 0;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        .metric-card {
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #f8f9fa;
+        }
+        .cost-card {
+            background-color: #f1f8ff;
+            border-left: 5px solid #007bff;
+        }
+        .experience-card {
+            background-color: #f1fff8;
+            border-left: 5px solid #28a745;
+        }
+        .warning-card {
+            background-color: #fff8f1;
+            border-left: 5px solid #fd7e14;
+        }
+        .recommendation-card {
+            background-color: #f5f0ff;
+            border-left: 5px solid #6f42c1;
+            padding: 25px;
+        }
+        .score-pill {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-weight: bold;
+            font-size: 14px;
+            color: white;
+        }
+        .score-high {
+            background-color: #28a745;
+        }
+        .score-medium {
+            background-color: #ffc107;
+            color: #212529;
+        }
+        .score-low {
+            background-color: #dc3545;
+        }
+        hr.divider {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+            margin: 30px 0;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #6c757d;
+            font-size: 12px;
+        }
+         {
+            body {
+                background-color: white;
+                color: black;
+            }
+            .section, .card {
+                break-inside: avoid;
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+            .page-header {
+                background: #0062cc;
+            }
+            a {
+                text-decoration: underline;
+                color: black;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div class="container">
+        <!-- Header Section -->
+        <div class="page-header">
+            <h1 class="text-3xl font-bold mb-2">Reachware InsightView: Strategic Path Forward</h1>
+            <p class="text-xl">Evaluating Migration from Current PowerBI Solution to Modern Analytics</p>
+            <div class="mt-4 text-sm opacity-80">Prepared for Reachware Leadership | May 2025</div>
+        </div>
 
-\f0\fs24 \cf0 <!DOCTYPE html>\
-<html lang="en">\
-<head>\
-    <meta charset="UTF-8">\
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
-    <title>Reachware InsightView: Strategic Path Forward from PowerBI to Modern Analytics</title>\
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">\
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">\
-    <style>\
-        body \{\
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\
-            color: #333;\
-            line-height: 1.6;\
-        \}\
-        .container \{\
-            max-width: 1200px;\
-            margin: 0 auto;\
-            padding: 20px;\
-        \}\
-        .page-header \{\
-            background: linear-gradient(135deg, #0062cc 0%, #0033cc 100%);\
-            color: white;\
-            padding: 30px;\
-            border-radius: 8px;\
-            margin-bottom: 30px;\
-        \}\
-        .section \{\
-            margin-bottom: 40px;\
-            padding: 20px;\
-            border-radius: 8px;\
-            background-color: #fff;\
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);\
-        \}\
-        .comparison-table \{\
-            width: 100%;\
-            border-collapse: collapse;\
-            margin: 20px 0;\
-        \}\
-        .comparison-table th, .comparison-table td \{\
-            padding: 12px;\
-            border: 1px solid #ddd;\
-            text-align: left;\
-        \}\
-        .comparison-table th \{\
-            background-color: #f5f7fa;\
-        \}\
-        .comparison-table tr:nth-child(even) \{\
-            background-color: #f9f9f9;\
-        \}\
-        .card \{\
-            border-radius: 8px;\
-            padding: 20px;\
-            margin-bottom: 20px;\
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);\
-        \}\
-        .option-header \{\
-            border-left: 5px solid;\
-            padding-left: 15px;\
-            margin-bottom: 20px;\
-        \}\
-        .current-state \{\
-            border-color: #6c757d;\
-        \}\
-        .option-1 \{\
-            border-color: #007bff;\
-        \}\
-        .option-2 \{\
-            border-color: #28a745;\
-        \}\
-        .tag \{\
-            display: inline-block;\
-            padding: 4px 8px;\
-            border-radius: 4px;\
-            font-size: 12px;\
-            font-weight: bold;\
-            margin-right: 5px;\
-        \}\
-        .tag-neutral \{\
-            background-color: #f8f9fa;\
-            color: #6c757d;\
-        \}\
-        .tag-positive \{\
-            background-color: #d4edda;\
-            color: #28a745;\
-        \}\
-        .tag-negative \{\
-            background-color: #f8d7da;\
-            color: #dc3545;\
-        \}\
-        .tag-warning \{\
-            background-color: #fff3cd;\
-            color: #ffc107;\
-        \}\
-        .chart \{\
-            height: 300px;\
-            margin: 30px 0;\
-            border: 1px solid #e9ecef;\
-            border-radius: 8px;\
-            padding: 20px;\
-            background-color: #f8f9fa;\
-        \}\
-        .metric-card \{\
-            border-radius: 8px;\
-            padding: 20px;\
-            margin-bottom: 20px;\
-            background-color: #f8f9fa;\
-        \}\
-        .cost-card \{\
-            background-color: #f1f8ff;\
-            border-left: 5px solid #007bff;\
-        \}\
-        .experience-card \{\
-            background-color: #f1fff8;\
-            border-left: 5px solid #28a745;\
-        \}\
-        .warning-card \{\
-            background-color: #fff8f1;\
-            border-left: 5px solid #fd7e14;\
-        \}\
-        .recommendation-card \{\
-            background-color: #f5f0ff;\
-            border-left: 5px solid #6f42c1;\
-            padding: 25px;\
-        \}\
-        .score-pill \{\
-            display: inline-block;\
-            padding: 5px 10px;\
-            border-radius: 15px;\
-            font-weight: bold;\
-            font-size: 14px;\
-            color: white;\
-        \}\
-        .score-high \{\
-            background-color: #28a745;\
-        \}\
-        .score-medium \{\
-            background-color: #ffc107;\
-            color: #212529;\
-        \}\
-        .score-low \{\
-            background-color: #dc3545;\
-        \}\
-        hr.divider \{\
-            border: 0;\
-            height: 1px;\
-            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));\
-            margin: 30px 0;\
-        \}\
-        .footer \{\
-            text-align: center;\
-            margin-top: 40px;\
-            padding: 20px;\
-            color: #6c757d;\
-            font-size: 12px;\
-        \}\
-         \{\
-            body \{\
-                background-color: white;\
-                color: black;\
-            \}\
-            .section, .card \{\
-                break-inside: avoid;\
-                box-shadow: none;\
-                border: 1px solid #ddd;\
-            \}\
-            .page-header \{\
-                background: #0062cc;\
-            \}\
-            a \{\
-                text-decoration: underline;\
-                color: black;\
-            \}\
-        \}\
-    </style>\
-</head>\
-<body class="bg-gray-50">\
-    <div class="container">\
-        <!-- Header Section -->\
-        <div class="page-header">\
-            <h1 class="text-3xl font-bold mb-2">Reachware InsightView: Strategic Path Forward</h1>\
-            <p class="text-xl">Evaluating Migration from Current PowerBI Solution to Modern Analytics</p>\
-            <div class="mt-4 text-sm opacity-80">Prepared for Reachware Leadership | May 2025</div>\
-        </div>\
-\
-        <!-- Executive Summary -->\
-        <div class="section">\
-            <h2 class="text-2xl font-bold mb-4">Executive Summary</h2>\
-            <p class="mb-4">\
-                Reachware InsightView is at a critical juncture as it scales to serve more clients with richer insights. This analysis evaluates three distinct scenarios for the platform's architecture, with focus on customer experience, scalability, and cost implications.\
-            </p>\
-            \
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">\
-                <div class="card bg-gray-100">\
-                    <h3 class="text-lg font-bold mb-3">Current State</h3>\
-                    <p class="text-gray-700">PowerBI + Traditional Database</p>\
-                    <div class="mt-3">\
-                        <span class="tag tag-warning">Limited Scalability</span>\
-                    </div>\
-                </div>\
-                <div class="card bg-blue-50">\
-                    <h3 class="text-lg font-bold mb-3">Option 1</h3>\
-                    <p class="text-gray-700">PowerBI + Snowflake</p>\
-                    <div class="mt-3">\
-                        <span class="tag tag-positive">Enhanced Performance</span>\
-                    </div>\
-                </div>\
-                <div class="card bg-green-50">\
-                    <h3 class="text-lg font-bold mb-3">Option 2</h3>\
-                    <p class="text-gray-700">Looker + Snowflake</p>\
-                    <div class="mt-3">\
-                        <span class="tag tag-positive">Maximum Scalability</span>\
-                    </div>\
-                </div>\
-            </div>\
-        </div>\
-\
-        <!-- Current State Assessment -->\
-        <div class="section">\
-            <h2 class="text-2xl font-bold mb-4">Current State Assessment</h2>\
-            <div class="option-header current-state">\
-                <h3 class="text-xl font-bold">PowerBI with Traditional Database</h3>\
-            </div>\
-            \
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">\
-                <div class="card">\
-                    <h4 class="text-lg font-bold mb-3">Current Architecture</h4>\
-                    <ul class="list-disc pl-5 space-y-2">\
-                        <li>PowerBI dashboards built and customized per client</li>\
-                        <li>Data stored in traditional relational database</li>\
-                        <li>Manual duplication of reports for new clients</li>\
-                        <li>Row-level security (RLS) used for data isolation</li>\
-                        <li>Limited embedding capabilities through PowerBI Embedded</li>\
-                    </ul>\
-                </div>\
-                \
-                <div class="card">\
-                    <h4 class="text-lg font-bold mb-3">Current Limitations</h4>\
-                    <ul class="list-disc pl-5 space-y-2">\
-                        <li>Scaling beyond 10-20 clients becomes increasingly complex</li>\
-                        <li>Maintenance burden grows linearly with each client</li>\
-                        <li>Inconsistent KPI definitions across client implementations</li>\
-                        <li>Database performance degradation with growing data volume</li>\
-                        <li>Limited embedding capabilities restrict product enhancement</li>\
-                    </ul>\
-                </div>\
-            </div>\
-\
-            <div class="warning-card card mt-6">\
-                <h4 class="text-lg font-bold mb-2">Critical Scaling Challenges</h4>\
-                <p>The current architecture was not designed for multi-tenant SaaS delivery at scale. As Reachware InsightView grows beyond 20 clients, maintenance overhead increases exponentially while the customer experience suffers from performance degradation and limited customization options.</p>\
-            </div>\
-        </div>\
-\
-        <!-- Migration Option Comparison -->\
-        <div class="section">\
-            <h2 class="text-2xl font-bold mb-4">Migration Options Comparison</h2>\
-            \
-            <!-- Option 1: PowerBI + Snowflake -->\
-            <div class="option-header option-1 mt-8">\
-                <h3 class="text-xl font-bold">Option 1: PowerBI + Snowflake</h3>\
-                <p class="text-gray-600">Retaining PowerBI as the visualization layer while upgrading the data backend to Snowflake</p>\
-            </div>\
-            \
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">\
-                <div class="card">\
-                    <h4 class="text-lg font-bold mb-3">Technical Architecture</h4>\
-                    <ul class="list-disc pl-5 space-y-2">\
-                        <li>Migrate data from traditional database to Snowflake</li>\
-                        <li>Maintain PowerBI as the visualization and reporting layer</li>\
-                        <li>Continue using PowerBI DAX for metrics definitions</li>\
-                        <li>Leverage Snowflake's performance for data storage and processing</li>\
-                        <li>Still requires separate reports per client with Row-Level Security</li>\
-                    </ul>\
-                </div>\
-                \
-                <div class="experience-card card">\
-                    <h4 class="text-lg font-bold mb-3">Customer Experience Impact</h4>\
-                    <div class="mb-3">\
-                        <p class="mb-2"><strong>Small Scale (10 clients)</strong></p>\
-                        <div class="flex items-center">\
-                            <span class="score-pill score-high mr-3">High</span>\
-                            <span>Significant performance improvements, faster queries</span>\
-                        </div>\
-                    </div>\
-                    <div class="mb-3">\
-                        <p class="mb-2"><strong>Medium Scale (50 clients)</strong></p>\
-                        <div class="flex items-center">\
-                            <span class="score-pill score-medium mr-3">Medium</span>\
-                            <span>Good performance but administration overhead increases</span>\
-                        </div>\
-                    </div>\
-                    <div>\
-                        <p class="mb-2"><strong>Large Scale (100+ clients)</strong></p>\
-                        <div class="flex items-center">\
-                            <span class="score-pill score-low mr-3">Low</span>\
-                            <span>Administrative burden becomes significant; limited customization abilities</span>\
-                        </div>\
-                    </div>\
-                </div>\
-            </div>\
-            \
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">\
-                <div class="card">\
-                    <h4 class="text-lg font-bold mb-3">Key Advantages</h4>\
-                    <ul class="list-disc pl-5 space-y-2">\
-                        <li>Minimal disruption to existing workflows and user training</li>\
-                        <li>Significantly improved query performance over traditional database</li>\
-                        <li>Familiar PowerBI interface for end-users and developers</li>\
-                        <li>Retains compatibility with Microsoft ecosystem</li>\
-                        <li>Lower migration complexity compared to full platform change</li>\
-                    </ul>\
-                </div>\
-                \
-                <div class="card">\
-                    <h4 class="text-lg font-bold mb-3">Key Limitations</h4>\
-                    <ul class="list-disc pl-5 space-y-2">\
-                        <li>Still faces PowerBI's multi-tenancy limitations</li>\
-                        <li>Report duplication problem remains unaddressed</li>\
-                        <li>Metrics defined in DAX stay tied to specific reports</li>\
-                        <li>Embedding capabilities remain limited by PowerBI architecture</li>\
-                        <li>Client-specific customizations still require significant overhead</li>\
-                    </ul>\
-                </div>\
-            </div>\
-            \
-            <div class="cost-card card mt-6">\
-                <h4 class="text-lg font-bold mb-3">Cost Profile: PowerBI + Snowflake</h4>\
-                <div class="overflow-x-auto">\
-                    <table class="comparison-table">\
-                        <thead>\
-                            <tr>\
-                                <th>Component</th>\
-                                <th>Small Scale<br>(10 clients)</th>\
-                                <th>Medium Scale<br>(50 clients)</th>\
-                                <th>Large Scale<br>(100+ clients)</th>\
-                            </tr>\
-                        </thead>\
-                        <tbody>\
-                            <tr>\
-                                <td>PowerBI License</td>\
-                                <td>$1,000/month</td>\
-                                <td>$5,000/month</td>\
-                                <td>$10,000+/month</td>\
-                            </tr>\
-                            <tr>\
-                                <td>Snowflake Storage<br>($24.50 per TB)</td>\
-                                <td>$1.225/month<br>(50GB total)</td>\
-                                <td>$6.125/month<br>(250GB total)</td>\
-                                <td>$12.250/month<br>(500GB total)</td>\
-                            </tr>\
-                            <tr>\
-                                <td>Snowflake Credits<br>($3.90 per credit)</td>\
-                                <td>$390/month<br>(100 credits)</td>\
-                                <td>$1,950/month<br>(500 credits)</td>\
-                                <td>$3,900/month<br>(1,000 credits)</td>\
-                            </tr>\
-                            <tr>\
-                                <td>Implementation Cost</td>\
-                                <td colspan="3">$75,000 - $125,000 (One-time)</td>\
-                            </tr>\
-                            <tr>\
-                                <td>Maintenance Overhead</td>\
-                                <td>Medium</td>\
-                                <td>High</td>\
-                                <td>Very High</td>\
-                            </tr>\
-                            <tr class="font-bold bg-blue-50">\
-                                <td>Monthly Total</td>\
-                                <td>$1,3915/month</td>\
-                                <td>$6,965/month</td>\
-                                <td>$13,912+/month</td>\
-                            </tr>\
-                        </tbody>\
-                    </table>\
-                </div>\
-            </div>\
-            \
-            <!-- Option 2: Looker + Snowflake -->\
-            <div class="option-header option-2 mt-8">\
-                <h3 class="text-xl font-bold">Option 2: Looker + Snowflake</h3>\
-                <p class="text-gray-600">Complete platform migration to Looker visualization layer with Snowflake as the data backend</p>\
-            </div>\
-            \
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">\
-                <div class="card">\
-                    <h4 class="text-lg font-bold mb-3">Technical Architecture</h4>\
-                    <ul class="list-disc pl-5 space-y-2">\
-                        <li>Migrate data from traditional database to Snowflake</li>\
-                        <li>Replace PowerBI with Looker as visualization and analytics layer</li>\
-                        <li>Implement LookML for centralized metrics definitions</li>\
-                        <li>Leverage Looker's native multi-tenant architecture</li>\
-                        <li>Single dashboard implementation serving all clients with dynamic filtering</li>\
-                    </ul>\
-                </div>\
-                \
-                <div class="experience-card card">\
-                    <h4 class="text-lg font-bold mb-3">Customer Experience Impact</h4>\
-                    <div class="mb-3">\
-                        <p class="mb-2"><strong>Small Scale (10 clients)</strong></p>\
-                        <div class="flex items-center">\
-                            <span class="score-pill score-high mr-3">High</span>\
-                            <span>Modern embedded analytics with improved customization options</span>\
-                        </div>\
-                    </div>\
-                    <div class="mb-3">\
-                        <p class="mb-2"><strong>Medium Scale (50 clients)</strong></p>\
-                        <div class="flex items-center">\
-                            <span class="score-pill score-high mr-3">High</span>\
-                            <span>Centralized governance with consistent experience across clients</span>\
-                        </div>\
-                    </div>\
-                    <div>\
-                        <p class="mb-2"><strong>Large Scale (100+ clients)</strong></p>\
-                        <div class="flex items-center">\
-                            <span class="score-pill score-high mr-3">High</span>\
-                            <span>Scales efficiently with minimal increase in maintenance overhead</span>\
-                        </div>\
-                    </div>\
-                </div>\
-            </div>\
-            \
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">\
-                <div class="card">\
-                    <h4 class="text-lg font-bold mb-3">Key Advantages</h4>\
-                    <ul class="list-disc pl-5 space-y-2">\
-                        <li>True multi-tenant architecture designed for SaaS delivery</li>\
-                        <li>Centralized metric definitions through LookML</li>\
-                        <li>Superior embedding options with more flexible APIs</li>\
-                        <li>Better scalability as client numbers grow</li>\
-                        <li>More sophisticated security and isolation features</li>\
-                        <li>Maintenance effort remains relatively constant regardless of client count</li>\
-                    </ul>\
-                </div>\
-                \
-                <div class="card">\
-                    <h4 class="text-lg font-bold mb-3">Key Limitations</h4>\
-                    <ul class="list-disc pl-5 space-y-2">\
-                        <li>Higher initial learning curve for development team</li>\
-                        <li>More complex migration from current PowerBI implementation</li>\
-                        <li>Higher upfront implementation costs</li>\
-                        <li>Requires staff training on new platform</li>\
-                        <li>Potential short-term disruption during transition</li>\
-                    </ul>\
-                </div>\
-            </div>\
-            \
-            <div class="cost-card card mt-6">\
-                <h4 class="text-lg font-bold mb-3">Cost Profile: Looker + Snowflake</h4>\
-                <div class="overflow-x-auto">\
-                    <table class="comparison-table">\
-                        <thead>\
-                            <tr>\
-                                <th>Component</th>\
-                                <th>Small Scale<br>(10 clients)</th>\
-                                <th>Medium Scale<br>(50 clients)</th>\
-                                <th>Large Scale<br>(100+ clients)</th>\
-                            </tr>\
-                        </thead>\
-                        <tbody>\
-                            <tr>\
-                                <td>Looker License</td>\
-                                <td>$1,800/month</td>\
-                                <td>$6,000/month</td>\
-                                <td>$10,000/month</td>\
-                            </tr>\
-                            <tr>\
-                                <td>Snowflake Storage<br>($24.50 per TB)</td>\
-                                <td>$1.225/month<br>(50GB total)</td>\
-                                <td>$6.125/month<br>(250GB total)</td>\
-                                <td>$12.250/month<br>(500GB total)</td>\
-                            </tr>\
-                            <tr>\
-                                <td>Snowflake Credits<br>($3.90 per credit)</td>\
-                                <td>$390/month<br>(100 credits)</td>\
-                                <td>$1,950/month<br>(500 credits)</td>\
-                                <td>$3,900/month<br>(1,000 credits)</td>\
-                            </tr>\
-                            <tr>\
-                                <td>Implementation Cost</td>\
-                                <td colspan="3">$150,000 - $200,000 (One-time)</td>\
-                            </tr>\
-                            <tr>\
-                                <td>Maintenance Overhead</td>\
-                                <td>Medium</td>\
-                                <td>Medium</td>\
-                                <td>Medium</td>\
-                            </tr>\
-                            <tr class="font-bold bg-green-50">\
-                                <td>Monthly Total</td>\
-                                <td>$2,191/month</td>\
-                                <td>$7,965/month</td>\
-                                <td>$13,912/month</td>\
-                            </tr>\
-                        </tbody>\
-                    </table>\
-                </div>\
-            </div>\
-        </div>\
-\
-        <!-- Customer Experience & Product Enhancement -->\
-        <div class="section">\
-            <h2 class="text-2xl font-bold mb-4">Customer Experience & Product Enhancement at Scale</h2>\
-            \
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">\
-                <div class="card">\
-                    <h4 class="text-lg font-bold mb-3">PowerBI + Snowflake</h4>\
-                    <h5 class="font-semibold mb-2">Dashboard Performance</h5>\
-                    <ul class="list-disc pl-5 mb-4 space-y-1">\
-                        <li>Initial improvement from database migration</li>\
-                        <li>Performance gains plateau as client count increases</li>\
-                        <li>Load times increase with complex security filtering</li>\
-                    </ul>\
-                    \
-                    <h5 class="font-semibold mb-2">Personalization Capabilities</h5>\
-                    <ul class="list-disc pl-5 mb-4 space-y-1">\
-                        <li>Limited to PowerBI's native customization options</li>\
-                        <li>Client-specific modifications require separate report copies</li>\
-                        <li>Changes must be manually propagated across client instances</li>\
-                    </ul>\
-                    \
-                    <h5 class="font-semibold mb-2">Embedding Experience</h5>\
-                    <ul class="list-disc pl-5 mb-4 space-y-1">\
-                        <li>Basic iframe embedding with limited API control</li>\
-                        <li>Limited customization of embedded experience</li>\
-                        <li>User identity management requires PowerBI Pro licenses</li>\
-                        <li>Potentially slower performance due to iframe architecture</li>\
-                    </ul>\
-                    \
-                    <h5 class="font-semibold mb-2">Self-Service Capabilities</h5>\
-                    <ul class="list-disc pl-5 space-y-1">\
-                        <li>End-users need PowerBI Pro licenses for self-service</li>\
-                        <li>More complex permissions management</li>\
-                        <li>Requires access to PowerBI Service outside embedding</li>\
-                    </ul>\
-                </div>\
-                \
-                <div class="card">\
-                    <h4 class="text-lg font-bold mb-3">Looker + Snowflake</h4>\
-                    <h5 class="font-semibold mb-2">Dashboard Performance</h5>\
-                    <ul class="list-disc pl-5 mb-4 space-y-1">\
-                        <li>Optimized for multi-tenant delivery from the start</li>\
-                        <li>Consistent performance as client count scales</li>\
-                        <li>Dynamic filtering without security overhead</li>\
-                    </ul>\
-                    \
-                    <h5 class="font-semibold mb-2">Personalization Capabilities</h5>\
-                    <ul class="list-disc pl-5 mb-4 space-y-1">\
-                        <li>Single implementation with dynamic client-specific views</li>\
-                        <li>Centralized changes automatically apply to all clients</li>\
-                        <li>Client-specific parameter configuration without code duplication</li>\
-                    </ul>\
-                    \
-                    <h5 class="font-semibold mb-2">Embedding Experience</h5>\
-                    <ul class="list-disc pl-5 mb-4 space-y-1">\
-                        <li>Advanced API-first approach to embedding</li>\
-                        <li>Greater control over embedded analytics experience</li>\
-                        <li>More seamless integration with host application</li>\
-                        <li>Better performance with JavaScript API integration</li>\
-                    </ul>\
-                    \
-                    <h5 class="font-semibold mb-2">Self-Service Capabilities</h5>\
-                    <ul class="list-disc pl-5 space-y-1">\
-                        <li>Built-in self-service within embedded experience</li>\
-                        <li>Simpler licensing model for end-users</li>\
-                        <li>More granular permissions management</li>\
-                    </ul>\
-                </div>\
-            </div>\
-            \
-            <div class="card mt-6">\
-                <h4 class="text-lg font-bold mb-3">Product Maturity Comparison</h4>\
-                <div class="overflow-x-auto">\
-                    <table class="comparison-table">\
-                        <thead>\
-                            <tr>\
-                                <th>Feature</th>\
-                                <th>PowerBI + Snowflake</th>\
-                                <th>Looker + Snowflake</th>\
-                                <th>Impact at Scale</th>\
-                            </tr>\
-                        </thead>\
-                        <tbody>\
-                            <tr>\
-                                <td>Data Refresh Rate</td>\
-                                <td>Limited by PowerBI scheduling</td>\
-                                <td>Real-time query execution</td>\
-                                <td>Higher client satisfaction with current data</td>\
-                            </tr>\
-                            <tr>\
-                                <td>Cross-Client Analytics</td>\
-                                <td>Difficult, requires manual aggregation</td>\
-                                <td>Native support through LookML models</td>\
-                                <td>Better insights across customer base</td>\
-                            </tr>\
-                            <tr>\
-                                <td>Feature Deployment</td>\
-                                <td>Must update each client dashboard</td>\
-                                <td>Single update propagates to all clients</td>\
-                                <td>Faster innovation cycles and updates</td>\
-                            </tr>\
-                            <tr>\
-                                <td>White-labeling</td>\
-                                <td>Basic customization options</td>\
-                                <td>Advanced theming and branding controls</td>\
-                                <td>More seamless client branding integration</td>\
-                            </tr>\
-                            <tr>\
-                                <td>API Integration</td>\
-                                <td>Limited API surface</td>\
-                                <td>Comprehensive API ecosystem</td>\
-                                <td>More extensibility for custom features</td>\
-                            </tr>\
-                            <tr>\
-                                <td>Mobile Experience</td>\
-                                <td>Separate mobile app</td>\
-                                <td>Responsive embedded experience</td>\
-                                <td>Consistent cross-device usage</td>\
-                            </tr>\
-                            <tr>\
-                                <td>Offline Access</td>\
-                                <td>Limited capabilities</td>\
-                                <td>Better offline mode options</td>\
-                                <td>Improved field usage scenarios</td>\
-                            </tr>\
-                        </tbody>\
-                    </table>\
-                </div>\
-            </div>\
-        </div>\
-\
-        <!-- Total Cost of Ownership Analysis -->\
-        <div class="section">\
-            <h2 class="text-2xl font-bold mb-4">Total Cost of Ownership Analysis</h2>\
-            \
-            <p class="mb-4">This analysis examines the total cost of ownership over a three-year period, accounting for implementation, licensing, maintenance, and scaling costs.</p>\
-            \
-            <div class="cost-card card">\
-                <h4 class="text-lg font-bold mb-3">3-Year TCO Comparison</h4>\
-                <div class="overflow-x-auto">\
-                    <table class="comparison-table">\
-                        <thead>\
-                            <tr>\
-                                <th rowspan="2">Component</th>\
-                                <th colspan="2">10 Clients</th>\
-                                <th colspan="2">50 Clients</th>\
-                                <th colspan="2">100 Clients</th>\
-                            </tr>\
-                            <tr>\
-                                <th>PowerBI + Snowflake</th>\
-                                <th>Looker + Snowflake</th>\
-                                <th>PowerBI + Snowflake</th>\
-                                <th>Looker + Snowflake</th>\
-                                <th>PowerBI + Snowflake</th>\
-                                <th>Looker + Snowflake</th>\
-                            </tr>\
-                        </thead>\
-                        <tbody>\
-                            <tr>\
-                                <td>Implementation</td>\
-                                <td>$100,000</td>\
-                                <td>$175,000</td>\
-                                <td>$100,000</td>\
-                                <td>$175,000</td>\
-                                <td>$100,000</td>\
-                                <td>$175,000</td>\
-                            </tr>\
-                            <tr>\
-                                <td>3-Year Licensing</td>\
-                                <td>$50,084</td>\
-                                <td>$78,884</td>\
-                                <td>$250,420,700</td>\
-                                <td>$286,420</td>\
-                                <td>$500,841</td>\
-                                <td>$500,841</td>\
-                            </tr>\
-                            <tr>\
-                                <td>Staff Training</td>\
-                                <td>$5,000</td>\
-                                <td>$25,000</td>\
-                                <td>$5,000</td>\
-                                <td>$25,000</td>\
-                                <td>$5,000</td>\
-                                <td>$25,000</td>\
-                            </tr>\
-                            <tr>\
-                                <td>Maintenance Labor<br>(3 years)</td>\
-                                <td>$90,000</td>\
-                                <td>$120,000</td>\
-                                <td>$270,000</td>\
-                                <td>$150,000</td>\
-                                <td>$450,000</td>\
-                                <td>$180,000</td>\
-                            </tr>\
-                            <tr>\
-                                <td>Client Onboarding<br>Labor</td>\
-                                <td>$30,000</td>\
-                                <td>$15,000</td>\
-                                <td>$150,000</td>\
-                                <td>$75,000</td>\
-                                <td>$300,000</td>\
-                                <td>$150,000</td>\
-                            </tr>\
-                            <tr class="font-bold">\
-                                <td>3-Year TCO</td>\
-                                <td class="bg-blue-50">$275,084</td>\
-                                <td class="bg-green-50">$413,884</td>\
-                                <td class="bg-blue-50">$775,420</td>\
-                                <td class="bg-green-50">$711420,700</td>\
-                                <td class="bg-blue-50">$1,355,841</td>\
-                                <td class="bg-green-50">$1,030,841</td>\
-                            </tr>\
-                            <tr>\
-                                <td>Cost Per Client</td>\
-                                <td>$ 27,508</td>\
-                                <td>$ 41,388.</td>\
-                                <td>$1 15,508</td>\
-                                <td>$ 14,228</td>\
-                                <td>$ 13,558</td>\
-                                <td>$ 10,308</td>\
-                            </tr>\
-                        </tbody>\
-                    </table>\
-                </div>\
-            </div>\
-            \
-            <div class="card mt-6">\
-                <h4 class="text-lg font-bold mb-3">Break-Even Analysis</h4>\
-                <p>Based on the TCO calculations above, the break-even point between the two options occurs at approximately <strong>30-35 clients</strong>. Below this threshold, PowerBI + Snowflake offers a lower total cost. Above this threshold, Looker + Snowflake becomes increasingly cost-effective due to significantly lower maintenance and onboarding costs per client.</p>\
-            </div>\
-            \
-            <div class="warning-card card mt-6">\
-                <h4 class="text-lg font-bold mb-3">Hidden Costs & Considerations</h4>\
-                <ul class="list-disc pl-5 space-y-2">\
-                    <li><strong>Feature Velocity:</strong> Looker enables faster feature deployment across clients, potentially increasing revenue or retention.</li>\
-                    <li><strong>Support Burden:</strong> PowerBI maintenance grows linearly with client count, requiring more support staff.</li>\
-                    <li><strong>Opportunity Cost:</strong> Complex PowerBI maintenance diverts development resources from new feature development.</li>\
-                    <li><strong>Client Satisfaction:</strong> Enhanced embedding and customization in Looker may improve client retention and reduce churn.</li>\
-                    <li><strong>Competitive Advantage:</strong> More advanced analytics capabilities can support premium pricing or feature differentiation.</li>\
-                </ul>\
-            </div>\
-        </div>\
-\
-        <!-- Strategic Recommendation -->\
-        <div class="section">\
-            <h2 class="text-2xl font-bold mb-4">Strategic Recommendation</h2>\
-            \
-            <div class="recommendation-card">\
-                <h3 class="text-xl font-bold mb-4">Recommended Path Forward</h3>\
-                \
-                <p class="mb-4">Based on our comprehensive analysis of technical capabilities, customer experience factors, and total cost of ownership, we recommend:</p>\
-                \
-                <div class="bg-purple-100 p-4 rounded-lg mb-6">\
-                    <p class="text-xl font-bold text-center text-purple-800">Migrate to Looker + Snowflake</p>\
-                </div>\
-                \
-                <h4 class="text-lg font-bold mb-3">Objective Rationale</h4>\
-                <ul class="list-disc pl-5 space-y-2 mb-6">\
-                    <li><strong>Superior Scalability:</strong> Looker's architecture is fundamentally designed for multi-tenant SaaS delivery, making it significantly more scalable as client numbers grow.</li>\
-                    <li><strong>Long-term Cost Efficiency:</strong> While initial implementation costs are higher, the TCO analysis demonstrates Looker becomes more cost-effective beyond 30-35 clients due to substantially lower maintenance and onboarding costs.</li>\
-                    <li><strong>Better Customer Experience:</strong> Looker offers superior embedding capabilities, faster performance at scale, and more customization options, directly enhancing the end-user experience.</li>\
-                    <li><strong>Centralized Governance:</strong> LookML provides a single source of truth for metric definitions, ensuring consistency across all client implementations.</li>\
-                    <li><strong>Development Efficiency:</strong> Single dashboard implementation serving multiple clients reduces development overhead and allows faster feature deployment.</li>\
-                    <li><strong>Strategic Alignment:</strong> Looker + Snowflake creates a modern analytics architecture that supports Reachware InsightView's growth trajectory and product vision.</li>\
-                </ul>\
-                \
-                <h4 class="text-lg font-bold mb-3">Implementation Approach</h4>\
-                <ol class="list-decimal pl-5 space-y-2">\
-                    <li>Begin with Snowflake migration to improve current PowerBI performance</li>\
-                    <li>Prototype core dashboards in Looker using the Snowflake backend</li>\
-                    <li>Implement phased client migration, starting with newer clients</li>\
-                    <li>Develop comprehensive LookML models for consistent metrics</li>\
-                    <li>Create embedded analytics templates for seamless client integration</li>\
-                    <li>Run parallel systems during transition to minimize disruption</li>\
-                </ol>\
-            </div>\
-        </div>\
-\
-        <hr class="divider">\
-        \
-        <div class="footer">\
-            <p>Prepared for Reachware InsightView | May 2025 | Confidential</p>\
-        </div>\
-    </div>\
-</body>\
-</html>\
-}
+        <!-- Executive Summary -->
+        <div class="section">
+            <h2 class="text-2xl font-bold mb-4">Executive Summary</h2>
+            <p class="mb-4">
+                Reachware InsightView is at a critical juncture as it scales to serve more clients with richer insights. This analysis evaluates three distinct scenarios for the platform's architecture, with focus on customer experience, scalability, and cost implications.
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+                <div class="card bg-gray-100">
+                    <h3 class="text-lg font-bold mb-3">Current State</h3>
+                    <p class="text-gray-700">PowerBI + Traditional Database</p>
+                    <div class="mt-3">
+                        <span class="tag tag-warning">Limited Scalability</span>
+                    </div>
+                </div>
+                <div class="card bg-blue-50">
+                    <h3 class="text-lg font-bold mb-3">Option 1</h3>
+                    <p class="text-gray-700">PowerBI + Snowflake</p>
+                    <div class="mt-3">
+                        <span class="tag tag-positive">Enhanced Performance</span>
+                    </div>
+                </div>
+                <div class="card bg-green-50">
+                    <h3 class="text-lg font-bold mb-3">Option 2</h3>
+                    <p class="text-gray-700">Looker + Snowflake</p>
+                    <div class="mt-3">
+                        <span class="tag tag-positive">Maximum Scalability</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Current State Assessment -->
+        <div class="section">
+            <h2 class="text-2xl font-bold mb-4">Current State Assessment</h2>
+            <div class="option-header current-state">
+                <h3 class="text-xl font-bold">PowerBI with Traditional Database</h3>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="card">
+                    <h4 class="text-lg font-bold mb-3">Current Architecture</h4>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>PowerBI dashboards built and customized per client</li>
+                        <li>Data stored in traditional relational database</li>
+                        <li>Manual duplication of reports for new clients</li>
+                        <li>Row-level security (RLS) used for data isolation</li>
+                        <li>Limited embedding capabilities through PowerBI Embedded</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h4 class="text-lg font-bold mb-3">Current Limitations</h4>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>Scaling beyond 10-20 clients becomes increasingly complex</li>
+                        <li>Maintenance burden grows linearly with each client</li>
+                        <li>Inconsistent KPI definitions across client implementations</li>
+                        <li>Database performance degradation with growing data volume</li>
+                        <li>Limited embedding capabilities restrict product enhancement</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="warning-card card mt-6">
+                <h4 class="text-lg font-bold mb-2">Critical Scaling Challenges</h4>
+                <p>The current architecture was not designed for multi-tenant SaaS delivery at scale. As Reachware InsightView grows beyond 20 clients, maintenance overhead increases exponentially while the customer experience suffers from performance degradation and limited customization options.</p>
+            </div>
+        </div>
+
+        <!-- Migration Option Comparison -->
+        <div class="section">
+            <h2 class="text-2xl font-bold mb-4">Migration Options Comparison</h2>
+            
+            <!-- Option 1: PowerBI + Snowflake -->
+            <div class="option-header option-1 mt-8">
+                <h3 class="text-xl font-bold">Option 1: PowerBI + Snowflake</h3>
+                <p class="text-gray-600">Retaining PowerBI as the visualization layer while upgrading the data backend to Snowflake</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="card">
+                    <h4 class="text-lg font-bold mb-3">Technical Architecture</h4>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>Migrate data from traditional database to Snowflake</li>
+                        <li>Maintain PowerBI as the visualization and reporting layer</li>
+                        <li>Continue using PowerBI DAX for metrics definitions</li>
+                        <li>Leverage Snowflake's performance for data storage and processing</li>
+                        <li>Still requires separate reports per client with Row-Level Security</li>
+                    </ul>
+                </div>
+                
+                <div class="experience-card card">
+                    <h4 class="text-lg font-bold mb-3">Customer Experience Impact</h4>
+                    <div class="mb-3">
+                        <p class="mb-2"><strong>Small Scale (10 clients)</strong></p>
+                        <div class="flex items-center">
+                            <span class="score-pill score-high mr-3">High</span>
+                            <span>Significant performance improvements, faster queries</span>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <p class="mb-2"><strong>Medium Scale (50 clients)</strong></p>
+                        <div class="flex items-center">
+                            <span class="score-pill score-medium mr-3">Medium</span>
+                            <span>Good performance but administration overhead increases</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="mb-2"><strong>Large Scale (100+ clients)</strong></p>
+                        <div class="flex items-center">
+                            <span class="score-pill score-low mr-3">Low</span>
+                            <span>Administrative burden becomes significant; limited customization abilities</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+                <div class="card">
+                    <h4 class="text-lg font-bold mb-3">Key Advantages</h4>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>Minimal disruption to existing workflows and user training</li>
+                        <li>Significantly improved query performance over traditional database</li>
+                        <li>Familiar PowerBI interface for end-users and developers</li>
+                        <li>Retains compatibility with Microsoft ecosystem</li>
+                        <li>Lower migration complexity compared to full platform change</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h4 class="text-lg font-bold mb-3">Key Limitations</h4>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>Still faces PowerBI's multi-tenancy limitations</li>
+                        <li>Report duplication problem remains unaddressed</li>
+                        <li>Metrics defined in DAX stay tied to specific reports</li>
+                        <li>Embedding capabilities remain limited by PowerBI architecture</li>
+                        <li>Client-specific customizations still require significant overhead</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="cost-card card mt-6">
+                <h4 class="text-lg font-bold mb-3">Cost Profile: PowerBI + Snowflake</h4>
+                <div class="overflow-x-auto">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Component</th>
+                                <th>Small Scale<br>(10 clients)</th>
+                                <th>Medium Scale<br>(50 clients)</th>
+                                <th>Large Scale<br>(100+ clients)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>PowerBI License</td>
+                                <td>$1,000/month</td>
+                                <td>$5,000/month</td>
+                                <td>$10,000+/month</td>
+                            </tr>
+                            <tr>
+                                <td>Snowflake Storage<br>($24.50 per TB)</td>
+                                <td>$1.225/month<br>(50GB total)</td>
+                                <td>$6.125/month<br>(250GB total)</td>
+                                <td>$12.250/month<br>(500GB total)</td>
+                            </tr>
+                            <tr>
+                                <td>Snowflake Credits<br>($3.90 per credit)</td>
+                                <td>$390/month<br>(100 credits)</td>
+                                <td>$1,950/month<br>(500 credits)</td>
+                                <td>$3,900/month<br>(1,000 credits)</td>
+                            </tr>
+                            <tr>
+                                <td>Implementation Cost</td>
+                                <td colspan="3">$75,000 - $125,000 (One-time)</td>
+                            </tr>
+                            <tr>
+                                <td>Maintenance Overhead</td>
+                                <td>Medium</td>
+                                <td>High</td>
+                                <td>Very High</td>
+                            </tr>
+                            <tr class="font-bold bg-blue-50">
+                                <td>Monthly Total</td>
+                                <td>$1,3915/month</td>
+                                <td>$6,965/month</td>
+                                <td>$13,912+/month</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- Option 2: Looker + Snowflake -->
+            <div class="option-header option-2 mt-8">
+                <h3 class="text-xl font-bold">Option 2: Looker + Snowflake</h3>
+                <p class="text-gray-600">Complete platform migration to Looker visualization layer with Snowflake as the data backend</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="card">
+                    <h4 class="text-lg font-bold mb-3">Technical Architecture</h4>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>Migrate data from traditional database to Snowflake</li>
+                        <li>Replace PowerBI with Looker as visualization and analytics layer</li>
+                        <li>Implement LookML for centralized metrics definitions</li>
+                        <li>Leverage Looker's native multi-tenant architecture</li>
+                        <li>Single dashboard implementation serving all clients with dynamic filtering</li>
+                    </ul>
+                </div>
+                
+                <div class="experience-card card">
+                    <h4 class="text-lg font-bold mb-3">Customer Experience Impact</h4>
+                    <div class="mb-3">
+                        <p class="mb-2"><strong>Small Scale (10 clients)</strong></p>
+                        <div class="flex items-center">
+                            <span class="score-pill score-high mr-3">High</span>
+                            <span>Modern embedded analytics with improved customization options</span>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <p class="mb-2"><strong>Medium Scale (50 clients)</strong></p>
+                        <div class="flex items-center">
+                            <span class="score-pill score-high mr-3">High</span>
+                            <span>Centralized governance with consistent experience across clients</span>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="mb-2"><strong>Large Scale (100+ clients)</strong></p>
+                        <div class="flex items-center">
+                            <span class="score-pill score-high mr-3">High</span>
+                            <span>Scales efficiently with minimal increase in maintenance overhead</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+                <div class="card">
+                    <h4 class="text-lg font-bold mb-3">Key Advantages</h4>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>True multi-tenant architecture designed for SaaS delivery</li>
+                        <li>Centralized metric definitions through LookML</li>
+                        <li>Superior embedding options with more flexible APIs</li>
+                        <li>Better scalability as client numbers grow</li>
+                        <li>More sophisticated security and isolation features</li>
+                        <li>Maintenance effort remains relatively constant regardless of client count</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h4 class="text-lg font-bold mb-3">Key Limitations</h4>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>Higher initial learning curve for development team</li>
+                        <li>More complex migration from current PowerBI implementation</li>
+                        <li>Higher upfront implementation costs</li>
+                        <li>Requires staff training on new platform</li>
+                        <li>Potential short-term disruption during transition</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="cost-card card mt-6">
+                <h4 class="text-lg font-bold mb-3">Cost Profile: Looker + Snowflake</h4>
+                <div class="overflow-x-auto">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Component</th>
+                                <th>Small Scale<br>(10 clients)</th>
+                                <th>Medium Scale<br>(50 clients)</th>
+                                <th>Large Scale<br>(100+ clients)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Looker License</td>
+                                <td>$1,800/month</td>
+                                <td>$6,000/month</td>
+                                <td>$10,000/month</td>
+                            </tr>
+                            <tr>
+                                <td>Snowflake Storage<br>($24.50 per TB)</td>
+                                <td>$1.225/month<br>(50GB total)</td>
+                                <td>$6.125/month<br>(250GB total)</td>
+                                <td>$12.250/month<br>(500GB total)</td>
+                            </tr>
+                            <tr>
+                                <td>Snowflake Credits<br>($3.90 per credit)</td>
+                                <td>$390/month<br>(100 credits)</td>
+                                <td>$1,950/month<br>(500 credits)</td>
+                                <td>$3,900/month<br>(1,000 credits)</td>
+                            </tr>
+                            <tr>
+                                <td>Implementation Cost</td>
+                                <td colspan="3">$150,000 - $200,000 (One-time)</td>
+                            </tr>
+                            <tr>
+                                <td>Maintenance Overhead</td>
+                                <td>Medium</td>
+                                <td>Medium</td>
+                                <td>Medium</td>
+                            </tr>
+                            <tr class="font-bold bg-green-50">
+                                <td>Monthly Total</td>
+                                <td>$2,191/month</td>
+                                <td>$7,965/month</td>
+                                <td>$13,912/month</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Customer Experience & Product Enhancement -->
+        <div class="section">
+            <h2 class="text-2xl font-bold mb-4">Customer Experience & Product Enhancement at Scale</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="card">
+                    <h4 class="text-lg font-bold mb-3">PowerBI + Snowflake</h4>
+                    <h5 class="font-semibold mb-2">Dashboard Performance</h5>
+                    <ul class="list-disc pl-5 mb-4 space-y-1">
+                        <li>Initial improvement from database migration</li>
+                        <li>Performance gains plateau as client count increases</li>
+                        <li>Load times increase with complex security filtering</li>
+                    </ul>
+                    
+                    <h5 class="font-semibold mb-2">Personalization Capabilities</h5>
+                    <ul class="list-disc pl-5 mb-4 space-y-1">
+                        <li>Limited to PowerBI's native customization options</li>
+                        <li>Client-specific modifications require separate report copies</li>
+                        <li>Changes must be manually propagated across client instances</li>
+                    </ul>
+                    
+                    <h5 class="font-semibold mb-2">Embedding Experience</h5>
+                    <ul class="list-disc pl-5 mb-4 space-y-1">
+                        <li>Basic iframe embedding with limited API control</li>
+                        <li>Limited customization of embedded experience</li>
+                        <li>User identity management requires PowerBI Pro licenses</li>
+                        <li>Potentially slower performance due to iframe architecture</li>
+                    </ul>
+                    
+                    <h5 class="font-semibold mb-2">Self-Service Capabilities</h5>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>End-users need PowerBI Pro licenses for self-service</li>
+                        <li>More complex permissions management</li>
+                        <li>Requires access to PowerBI Service outside embedding</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h4 class="text-lg font-bold mb-3">Looker + Snowflake</h4>
+                    <h5 class="font-semibold mb-2">Dashboard Performance</h5>
+                    <ul class="list-disc pl-5 mb-4 space-y-1">
+                        <li>Optimized for multi-tenant delivery from the start</li>
+                        <li>Consistent performance as client count scales</li>
+                        <li>Dynamic filtering without security overhead</li>
+                    </ul>
+                    
+                    <h5 class="font-semibold mb-2">Personalization Capabilities</h5>
+                    <ul class="list-disc pl-5 mb-4 space-y-1">
+                        <li>Single implementation with dynamic client-specific views</li>
+                        <li>Centralized changes automatically apply to all clients</li>
+                        <li>Client-specific parameter configuration without code duplication</li>
+                    </ul>
+                    
+                    <h5 class="font-semibold mb-2">Embedding Experience</h5>
+                    <ul class="list-disc pl-5 mb-4 space-y-1">
+                        <li>Advanced API-first approach to embedding</li>
+                        <li>Greater control over embedded analytics experience</li>
+                        <li>More seamless integration with host application</li>
+                        <li>Better performance with JavaScript API integration</li>
+                    </ul>
+                    
+                    <h5 class="font-semibold mb-2">Self-Service Capabilities</h5>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Built-in self-service within embedded experience</li>
+                        <li>Simpler licensing model for end-users</li>
+                        <li>More granular permissions management</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="card mt-6">
+                <h4 class="text-lg font-bold mb-3">Product Maturity Comparison</h4>
+                <div class="overflow-x-auto">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Feature</th>
+                                <th>PowerBI + Snowflake</th>
+                                <th>Looker + Snowflake</th>
+                                <th>Impact at Scale</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Data Refresh Rate</td>
+                                <td>Limited by PowerBI scheduling</td>
+                                <td>Real-time query execution</td>
+                                <td>Higher client satisfaction with current data</td>
+                            </tr>
+                            <tr>
+                                <td>Cross-Client Analytics</td>
+                                <td>Difficult, requires manual aggregation</td>
+                                <td>Native support through LookML models</td>
+                                <td>Better insights across customer base</td>
+                            </tr>
+                            <tr>
+                                <td>Feature Deployment</td>
+                                <td>Must update each client dashboard</td>
+                                <td>Single update propagates to all clients</td>
+                                <td>Faster innovation cycles and updates</td>
+                            </tr>
+                            <tr>
+                                <td>White-labeling</td>
+                                <td>Basic customization options</td>
+                                <td>Advanced theming and branding controls</td>
+                                <td>More seamless client branding integration</td>
+                            </tr>
+                            <tr>
+                                <td>API Integration</td>
+                                <td>Limited API surface</td>
+                                <td>Comprehensive API ecosystem</td>
+                                <td>More extensibility for custom features</td>
+                            </tr>
+                            <tr>
+                                <td>Mobile Experience</td>
+                                <td>Separate mobile app</td>
+                                <td>Responsive embedded experience</td>
+                                <td>Consistent cross-device usage</td>
+                            </tr>
+                            <tr>
+                                <td>Offline Access</td>
+                                <td>Limited capabilities</td>
+                                <td>Better offline mode options</td>
+                                <td>Improved field usage scenarios</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Total Cost of Ownership Analysis -->
+        <div class="section">
+            <h2 class="text-2xl font-bold mb-4">Total Cost of Ownership Analysis</h2>
+            
+            <p class="mb-4">This analysis examines the total cost of ownership over a three-year period, accounting for implementation, licensing, maintenance, and scaling costs.</p>
+            
+            <div class="cost-card card">
+                <h4 class="text-lg font-bold mb-3">3-Year TCO Comparison</h4>
+                <div class="overflow-x-auto">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th rowspan="2">Component</th>
+                                <th colspan="2">10 Clients</th>
+                                <th colspan="2">50 Clients</th>
+                                <th colspan="2">100 Clients</th>
+                            </tr>
+                            <tr>
+                                <th>PowerBI + Snowflake</th>
+                                <th>Looker + Snowflake</th>
+                                <th>PowerBI + Snowflake</th>
+                                <th>Looker + Snowflake</th>
+                                <th>PowerBI + Snowflake</th>
+                                <th>Looker + Snowflake</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Implementation</td>
+                                <td>$100,000</td>
+                                <td>$175,000</td>
+                                <td>$100,000</td>
+                                <td>$175,000</td>
+                                <td>$100,000</td>
+                                <td>$175,000</td>
+                            </tr>
+                            <tr>
+                                <td>3-Year Licensing</td>
+                                <td>$50,084</td>
+                                <td>$78,884</td>
+                                <td>$250,420,700</td>
+                                <td>$286,420</td>
+                                <td>$500,841</td>
+                                <td>$500,841</td>
+                            </tr>
+                            <tr>
+                                <td>Staff Training</td>
+                                <td>$5,000</td>
+                                <td>$25,000</td>
+                                <td>$5,000</td>
+                                <td>$25,000</td>
+                                <td>$5,000</td>
+                                <td>$25,000</td>
+                            </tr>
+                            <tr>
+                                <td>Maintenance Labor<br>(3 years)</td>
+                                <td>$90,000</td>
+                                <td>$120,000</td>
+                                <td>$270,000</td>
+                                <td>$150,000</td>
+                                <td>$450,000</td>
+                                <td>$180,000</td>
+                            </tr>
+                            <tr>
+                                <td>Client Onboarding<br>Labor</td>
+                                <td>$30,000</td>
+                                <td>$15,000</td>
+                                <td>$150,000</td>
+                                <td>$75,000</td>
+                                <td>$300,000</td>
+                                <td>$150,000</td>
+                            </tr>
+                            <tr class="font-bold">
+                                <td>3-Year TCO</td>
+                                <td class="bg-blue-50">$275,084</td>
+                                <td class="bg-green-50">$413,884</td>
+                                <td class="bg-blue-50">$775,420</td>
+                                <td class="bg-green-50">$711420,700</td>
+                                <td class="bg-blue-50">$1,355,841</td>
+                                <td class="bg-green-50">$1,030,841</td>
+                            </tr>
+                            <tr>
+                                <td>Cost Per Client</td>
+                                <td>$ 27,508</td>
+                                <td>$ 41,388.</td>
+                                <td>$1 15,508</td>
+                                <td>$ 14,228</td>
+                                <td>$ 13,558</td>
+                                <td>$ 10,308</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="card mt-6">
+                <h4 class="text-lg font-bold mb-3">Break-Even Analysis</h4>
+                <p>Based on the TCO calculations above, the break-even point between the two options occurs at approximately <strong>30-35 clients</strong>. Below this threshold, PowerBI + Snowflake offers a lower total cost. Above this threshold, Looker + Snowflake becomes increasingly cost-effective due to significantly lower maintenance and onboarding costs per client.</p>
+            </div>
+            
+            <div class="warning-card card mt-6">
+                <h4 class="text-lg font-bold mb-3">Hidden Costs & Considerations</h4>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li><strong>Feature Velocity:</strong> Looker enables faster feature deployment across clients, potentially increasing revenue or retention.</li>
+                    <li><strong>Support Burden:</strong> PowerBI maintenance grows linearly with client count, requiring more support staff.</li>
+                    <li><strong>Opportunity Cost:</strong> Complex PowerBI maintenance diverts development resources from new feature development.</li>
+                    <li><strong>Client Satisfaction:</strong> Enhanced embedding and customization in Looker may improve client retention and reduce churn.</li>
+                    <li><strong>Competitive Advantage:</strong> More advanced analytics capabilities can support premium pricing or feature differentiation.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Strategic Recommendation -->
+        <div class="section">
+            <h2 class="text-2xl font-bold mb-4">Strategic Recommendation</h2>
+            
+            <div class="recommendation-card">
+                <h3 class="text-xl font-bold mb-4">Recommended Path Forward</h3>
+                
+                <p class="mb-4">Based on our comprehensive analysis of technical capabilities, customer experience factors, and total cost of ownership, we recommend:</p>
+                
+                <div class="bg-purple-100 p-4 rounded-lg mb-6">
+                    <p class="text-xl font-bold text-center text-purple-800">Migrate to Looker + Snowflake</p>
+                </div>
+                
+                <h4 class="text-lg font-bold mb-3">Objective Rationale</h4>
+                <ul class="list-disc pl-5 space-y-2 mb-6">
+                    <li><strong>Superior Scalability:</strong> Looker's architecture is fundamentally designed for multi-tenant SaaS delivery, making it significantly more scalable as client numbers grow.</li>
+                    <li><strong>Long-term Cost Efficiency:</strong> While initial implementation costs are higher, the TCO analysis demonstrates Looker becomes more cost-effective beyond 30-35 clients due to substantially lower maintenance and onboarding costs.</li>
+                    <li><strong>Better Customer Experience:</strong> Looker offers superior embedding capabilities, faster performance at scale, and more customization options, directly enhancing the end-user experience.</li>
+                    <li><strong>Centralized Governance:</strong> LookML provides a single source of truth for metric definitions, ensuring consistency across all client implementations.</li>
+                    <li><strong>Development Efficiency:</strong> Single dashboard implementation serving multiple clients reduces development overhead and allows faster feature deployment.</li>
+                    <li><strong>Strategic Alignment:</strong> Looker + Snowflake creates a modern analytics architecture that supports Reachware InsightView's growth trajectory and product vision.</li>
+                </ul>
+                
+                <h4 class="text-lg font-bold mb-3">Implementation Approach</h4>
+                <ol class="list-decimal pl-5 space-y-2">
+                    <li>Begin with Snowflake migration to improve current PowerBI performance</li>
+                    <li>Prototype core dashboards in Looker using the Snowflake backend</li>
+                    <li>Implement phased client migration, starting with newer clients</li>
+                    <li>Develop comprehensive LookML models for consistent metrics</li>
+                    <li>Create embedded analytics templates for seamless client integration</li>
+                    <li>Run parallel systems during transition to minimize disruption</li>
+                </ol>
+            </div>
+        </div>
+
+        <hr class="divider">
+        
+        <div class="footer">
+            <p>Prepared for Reachware InsightView | May 2025 | Confidential</p>
+        </div>
+    </div>
+</body>
+</html>
